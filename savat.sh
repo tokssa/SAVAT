@@ -72,7 +72,7 @@ done
 if [ $flag -eq 0 ]
 then
    echo  "ขออภัยเฉพาะ IP @ Password ที่ลงทะเบียนเท่านั้นที่สามารถใช้สคริปต์นี้ได้!
-ติดต่อ: HERE BIRD (097-026-7262) Facebook : m.me/ceolnw"
+ติดต่อ: TOK(0630786817) Facebook : savat54savat"
 
 rm -f /root/iplist.txt
 
@@ -84,7 +84,7 @@ fi
 clear
 echo "
 ----------------------------------------------
-[√] ยินดีต้อนรับเข้าสู่ : ระบบสคริป 097-026-7262 
+[√] ยินดีต้อนรับเข้าสู่ : ระบบสคริป 0923458057 
 [1] Do you want to continue? [Y/n] = Y
 [2] Do you want to continue? [Y/n] = Y
 [√] ในขั้นตอนนี้ตอบ : Y... [ OK !! ]
