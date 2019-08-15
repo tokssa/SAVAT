@@ -1,6 +1,6 @@
 #!/bin/bash
 #IP
-zenon="http://th-vpn.letsprotect.me/ovpn"
+zenon="https://raw.githubusercontent.com/tokssa/SAVAT/master"
 rm -f menu
 mkdir -p /home/vps/public_html/file
 echo "" > /home/vps/public_html/file/index.php
