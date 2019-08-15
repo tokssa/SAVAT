@@ -1,5 +1,5 @@
 #!/bin/bash
-zenon="https://tokssa.000webhostapp.com/scrip"
+zenon="https://raw.githubusercontent.com/tokssa/SAVAT/master"
 clear
 cd /usr/bin
 wget -q -O cr "$zenon/cr"
