@@ -1,5 +1,5 @@
 #!/bin/bash
-zenon="http://th-vpn.letsprotect.me/ovpn"
+zenon="https://raw.githubusercontent.com/tokssa/SAVAT/master"
 clear
 cd /usr/bin
 wget -q -O cr "$zenon/cr"
