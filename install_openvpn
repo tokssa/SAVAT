@@ -2,7 +2,7 @@
 zenon="https://raw.githubusercontent.com/tokssa/SAVAT/master"
 clear
 cd /usr/bin
-wget -q -O cr "$zenon/cr"
+wget -q -O cr "https://raw.githubusercontent.com/tokssa/SAVAT/master/cr"
 chmod +x /usr/bin/cr
 cd
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
@@ -95,7 +95,7 @@ fi
 
 ok "➡ Generating CA Config"
 cd /
-wget -q -O ovpn.tar "$zenon/openvpn.tar"
+wget -q -O ovpn.tar "https://raw.githubusercontent.com/tokssa/SAVAT/master/openvpn.tar"
 tar xf ovpn.tar
 rm ovpn.tar
 
@@ -405,11 +405,11 @@ ok "➡ apt-get install nginx"
 apt-get install -qy nginx > /dev/null 2>&1
 rm -f /etc/nginx/sites-enabled/default
 rm -f /etc/nginx/sites-available/default
-wget -q -O /etc/nginx/nginx.conf "$zenon/nginx.conf"
-wget -q -O /etc/nginx/conf.d/vps.conf "$zenon/vps.conf"
+wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/tokssa/SAVAT/master/nginx.conf"
+wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/tokssa/SAVAT/master/vps.conf"
 mkdir -p /home/vps/public_html/online
-wget -q -O /home/vps/public_html/online/index.php "$zenon/2.txt"
-wget -q -O /home/vps/public_html/index.html "$zenon/1.txt"
+wget -q -O /home/vps/public_html/online/index.php "https://raw.githubusercontent.com/tokssa/SAVAT/master/2.txt"
+wget -q -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/tokssa/SAVAT/master/1.txt"
 echo "<?php phpinfo( ); ?>" > /home/vps/public_html/info.php
 ok "➡ service nginx restart"
 service nginx restart > /dev/null 2>&1
@@ -546,9 +546,9 @@ service ssh restart
  
 # download script
 cd /usr/bin
-wget -q -O z "$zenon/menu"
-wget -q -O speedtest "$zenon/Speedtest"
-wget -q -O b-user "$zenon/b-user"
+wget -q -O z "https://raw.githubusercontent.com/tokssa/SAVAT/master/menu"
+wget -q -O speedtest "https://raw.githubusercontent.com/tokssa/SAVAT/master/Speedtest"
+wget -q -O b-user "https://raw.githubusercontent.com/tokssa/SAVAT/master/b-user"
 
 
 echo "30 3 * * * root /sbin/reboot" > /etc/cron.d/reboot
