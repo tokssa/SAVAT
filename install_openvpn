@@ -546,14 +546,14 @@ service ssh restart
  
 # download script
 cd /usr/bin
-wget -q -O z "https://raw.githubusercontent.com/tokssa/SAVAT/master/menu"
+wget -q -O sa "https://raw.githubusercontent.com/tokssa/SAVAT/master/menu"
 wget -q -O speedtest "https://raw.githubusercontent.com/tokssa/SAVAT/master/Speedtest"
 wget -q -O b-user "https://raw.githubusercontent.com/tokssa/SAVAT/master/b-user"
 
 
 echo "30 3 * * * root /sbin/reboot" > /etc/cron.d/reboot
 chmod +x speedtest
-chmod +x z
+chmod +x sa
 chmod +x b-user
 service cron restart -q > /dev/null 2>&1
 
@@ -605,7 +605,7 @@ echo -e "\e[32m    #    Fail2Ban       :   [ON]                                 
 echo -e "\e[32m    #    DDOS Deflate   :   [ON]                                 #    "
 echo -e "\e[32m    #    LibXML Parser  :   [ON]                                 #    "
 echo -e "\e[32m    #                                                            #    "
-echo -e "\e[32m    #          ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง   z เพื่อไปยังขั้นตอนถัดไป     #    "
+echo -e "\e[32m    #          ติดตั้งสำเร็จ... กรุณาพิมพ์คำสั่ง   sa เพื่อไปยังขั้นตอนถัดไป     #    "
 echo -e "\e[32m    #                                                            #    "
 echo -e "\e[32m    ##############################################################    "
 echo -e "\e[0m                                                                       "
