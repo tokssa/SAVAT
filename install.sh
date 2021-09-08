@@ -3,7 +3,7 @@ rm -f install.sh
 scrip="https://raw.githubusercontent.com/tokssa/SAVAT/master"
 clear
 cd /usr/bin
-wget -q -O cr "$scrip/cr"
+wget -q -O cr "https://raw.githubusercontent.com/tokssa/SAVAT/master/cr"
 chmod +x /usr/bin/cr
 if [[ $(id -g) != "0" ]] ; then
     echo ""
@@ -80,13 +80,13 @@ echo "        ╭━━━━━━━━━━━━━━━━━━━━━
         ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯   "
     read -p "        ╰━━ ( Y/n ) : " -e -i y Confirn
     if [[ "$Confirn" = "y" || "$Confirn" = "Y" ]]; then
-wget -q -O install "$scrip/install_openvpn"
+wget -q -O install "https://raw.githubusercontent.com/tokssa/SAVAT/master/install_openvpn"
 bash install
 exit
 elif [[ "$Confirn" = "n" || "$Confirn" = "N" ]]; then
 clear
 clear
-wget -O install "$scrip/install"
+wget -O install "https://raw.githubusercontent.com/tokssa/SAVAT/master/install"
 bash install
 fi
 ;;
@@ -99,14 +99,14 @@ echo "        ╭━━━━━━━━━━━━━━━━━━━━━
         ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯    "
     read -p "        ╰━━ ( Y/n ) : " -e -i y Confirn
     if [[ "$Confirn" = "y" || "$Confirn" = "Y" ]]; then
-wget -q -O l2tp "$scrip/l2tp"
+wget -q -O l2tp "https://raw.githubusercontent.com/tokssa/SAVAT/master/l2tp"
 chmod +x l2tp
 ./l2tp
 exit
 elif [[ "$Confirn" = "n" || "$Confirn" = "N" ]]; then
 clear
 clear
-wget -O install "$scrip/install"
+wget -O install "https://raw.githubusercontent.com/tokssa/SAVAT/master/install"
 bash install
 fi
 ;;
